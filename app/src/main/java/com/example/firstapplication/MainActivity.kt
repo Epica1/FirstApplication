@@ -1,3 +1,4 @@
+package com.example.firstapplication
 //№1
 //package com.example.firstapplication
 //
@@ -65,7 +66,6 @@
 //    Hello(name = "Михаил")
 //}
 //
-//// Задание 2: три макета предпросмотра
 //
 //@Preview(showSystemUi = true, name = "Портрет")
 //@Composable
@@ -121,7 +121,6 @@
 //@Composable
 //fun ComposeDescriptionSamples() {
 //    Column {
-//        // Вариант 1: зелёный цвет шрифта, 16.sp, курсив, по центру
 //        Text(
 //            text = stringResource(R.string.compose_description),
 //            color = Color.Green,
@@ -133,7 +132,6 @@
 //                .padding(8.dp)
 //        )
 //
-//        // Вариант 2: одна строка, в конце многоточие
 //        Text(
 //            text = stringResource(R.string.compose_description),
 //            maxLines = 1,
@@ -141,7 +139,6 @@
 //            modifier = Modifier.padding(8.dp)
 //        )
 //
-//        // Вариант 3: отступ перед первой строкой, 24.sp, чёрный текст на зелёном фоне, подчёркнутый
 //        Text(
 //            text = stringResource(R.string.compose_description),
 //            fontSize = 24.sp,
@@ -327,9 +324,8 @@
 //import androidx.compose.ui.res.painterResource
 //import androidx.compose.ui.tooling.preview.Preview
 //import androidx.compose.ui.unit.dp
+//import androidx.compose.ui.layout.ContentScale
 //
-//// Вариант 1: круг исходного размера в правом верхнем углу,
-//// компонент 240.dp x 120.dp с чёрным фоном
 //@Composable
 //fun CircleTopEndSample() {
 //    Box(
@@ -345,8 +341,6 @@
 //    }
 //}
 //
-//// Вариант 2: синий фон, круг по центру, растянут по размерам,
-//// цвет круга — фиолетовый
 //@Composable
 //fun CircleStretchedPurpleSample() {
 //    Box(
@@ -357,6 +351,7 @@
 //        Image(
 //            painter = painterResource(id = R.drawable.circle),
 //            contentDescription = null,
+//            contentScale = ContentScale.FillBounds,
 //            colorFilter = ColorFilter.tint(Color(0xFF9C27B0)),
 //            modifier = Modifier
 //                .fillMaxSize()
@@ -414,7 +409,6 @@
 //    Contact("Людмила", "Прокофьевна", "Калугина", "+7 495 788 78 78", "Москва, Большая Никитская, д. 43, кв. 290")
 //)
 //
-//// Задание 7 (Column): обычный текст, без фона, слева
 //@Composable
 //fun ContactColumn(contact: Contact) {
 //    Column(modifier = Modifier.padding(16.dp)) {
@@ -426,7 +420,6 @@
 //    }
 //}
 //
-//// Задание 7 (Row): серая карточка, текст по центру, звезда справа (произвольное изображение)
 //@Composable
 //fun ContactRow(contact: Contact) {
 //    Row(
@@ -456,7 +449,6 @@
 //    }
 //}
 //
-//// Серая карточка без звезды — для списка
 //@Composable
 //fun ContactCard(contact: Contact) {
 //    Column(
@@ -532,9 +524,9 @@
 //import androidx.compose.ui.unit.dp
 //import androidx.compose.ui.unit.sp
 //
-//val primaryColor = Color(0xFF3F51B5)   // синий заголовка
-//val secondaryColor = Color(0xFF616161) // серый числа
-//val buttonColor = Color(0xFF1E3A5F)    // тёмно-синяя кнопка
+//val primaryColor = Color(0xFF3F51B5)
+//val secondaryColor = Color(0xFF616161)
+//val buttonColor = Color(0xFF1E3A5F)
 //val buttonTextColor = Color.White
 //
 //@Composable
